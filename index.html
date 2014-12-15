@@ -41,93 +41,70 @@
 <!--INCLUDE GOOGLE MAPS, POPUPs -->
 <div id="divtopArea">
 
-		<!--LOCATION ENABLING SETTINGS POP UP BOX -->
-		<div class="arrow-up" style="right:280px;"></div>
-		<ul class="pop-up" style="right:205px; list-style:none">
-			<input class="but" style="float:right; margin-right:10px;" type="submit" name="gpssubmit" value="Submit" /> 
-			<li class="conten">
-				
-			</li>
-			<li class="conten" style="line-height:20px">
-				<input id="gps" type="checkbox" name="get gps" checked="checked"/>ENABLE GPS
-				<input class="txtfld" type="text" placeholder="Enter update rate..." size=""></input>	
-			</li>
-			<hr>
-			<li class="conten" style="line-height:20px">
-				<input id="wifi" type="checkbox" name="get wifi" checked="checked"/>ENABLE WIFI
-				<input class="txtfld" type="text" size="" placeholder="Enter update rate..."></input> 	
-			</li>
-			<hr>
-			<li class="conten" style="line-height:20px">
-				<input id="network" type="checkbox" name="get network" checked="checked"/>ENABLE NETWORK
-				<input class="txtfld" style="" type="text" size="" placeholder="Enter update rate..."></input> 	
-			</li>
-			<hr>
-			<li class="conten" style="line-height:20px">
-				<input id="barometer" type="checkbox" name="get baro" checked="checked"/>ENABLE BAROMETER
-				<input class="txtfld" type="text" size="" placeholder="Enter update rate..."></input> 
-			</li>
-		</ul>
+	<!--LOCATION ENABLING SETTINGS POP UP BOX -->
+	<div class="arrow-up" style="right:280px;"></div>
+	<ul class="pop-up" style="right:205px; list-style:none">
+		<input class="but" style="float:right; margin-right:10px;" type="submit" name="gpssubmit" value="Submit" /> 
+		<li class="conten">
+		</li>
+		<li class="conten" style="line-height:20px">
+			<input id="gps" type="checkbox" name="get gps" checked="checked"/>ENABLE GPS
+			<input class="txtfld" type="text" placeholder="Enter update rate..." size=""></input>	
+		</li>
+		<hr>
+		<li class="conten" style="line-height:20px">
+			<input id="wifi" type="checkbox" name="get wifi" checked="checked"/>ENABLE WIFI
+			<input class="txtfld" type="text" size="" placeholder="Enter update rate..."></input> 	
+		</li>
+		<hr>
+		<li class="conten" style="line-height:20px">
+			<input id="network" type="checkbox" name="get network" checked="checked"/>ENABLE NETWORK
+			<input class="txtfld" style="" type="text" size="" placeholder="Enter update rate..."></input> 	
+		</li>
+		<hr>
+		<li class="conten" style="line-height:20px">
+			<input id="barometer" type="checkbox" name="get baro" checked="checked"/>ENABLE BAROMETER
+			<input class="txtfld" type="text" size="" placeholder="Enter update rate..."></input> 
+		</li>
+	</ul>
 
 
-
-		
-		<!--Map TOOLS POP UP BOX -->
-		<div class="arrow-up" style="right:200px"></div> 
-		<ul class="popup " style="right:98px">
-			
-		
-					<li style="margin-bottom: 35px">
-						<strong id="deviceId-text"> Device ID
-							<input id="device" type="text" size=""></input> 
-						</strong>
-					</li>
-						<br />
-				
-					<li class='conten'>
-						  <input id="ShowCellidTaChk" type="checkbox" name=""/> Location Accuracy
-              
-					</li>
-					<hr/>
-					
-					<li class="conten"> 
-						<input id="smoothing" type="checkbox" name=""/> Kalman Filter ON 
-					</li>
-					<hr />
-					
-					<li class="conten">
-							<input id="ShowSites" name="ShowSites" type="checkbox" title=""/>Show Cell Sites   &nbsp;&nbsp;&nbsp;&nbsp;   
-		              		<br /> 
-		              		
-		              		
-		              		<strong class="mnc-mcc-text">MCC</strong>
-		              		<input id="MccList" type="text" style="width:40px"  name="" size="10">
-		                	</input>
-		                	
-		                	<strong  class="mnc-mcc-text">MNC</strong>
-		                	<input id="MncList" type="text" style="width:40px" name="" size="1">
-		                </input> 
-                	</li>
-					<hr/>
-					
-					<li class="conten">
-					<input id="ShowGeoFenceChk" type="checkbox" name="" value="OFF"/> GeoFence 
-					<br /> 
-					
-					<div id="geofence-button-div">
-					<button id="saveGeoFence"title="save">Save</button>
-					<button id="loadGeoFence" title="load">Load</button>
-					<button id="resetGeoFence" title="load">Reset</button>
-					</div>
-
-				
-					</li>
-					
-			</ul>
-		
-
-
-		
+	<!--Map TOOLS POP UP BOX -->
+	<div class="arrow-up" style="right:200px"></div> 
+	<ul class="popup " style="right:98px">
+		<li style="margin-bottom: 35px">
+			<strong id="deviceId-text"> Device ID
+				<input id="device" type="text" size=""></input> 
+			</strong>
+		</li>
+		<br />
+		<li class='conten'>
+			  <input id="ShowCellidTaChk" type="checkbox" name=""/> Location Accuracy
+      		</li>
+		<hr/>
+		<li class="conten"> 
+			<input id="smoothing" type="checkbox" name=""/> Kalman Filter ON 
+		</li>
+		<hr />
+		<li class="conten">
+			<input id="ShowSites" name="ShowSites" type="checkbox" title=""/>Show Cell Sites   &nbsp;&nbsp;&nbsp;&nbsp;   
+      			<br /> 
+              		<strong class="mnc-mcc-text">MCC</strong>
+              		<input id="MccList" type="text" style="width:40px"  name="" size="10"></input>
+                	<strong  class="mnc-mcc-text">MNC</strong>
+                	<input id="MncList" type="text" style="width:40px" name="" size="1"></input> 
+		</li>
+		<hr/>
+		<li class="conten">
+			<input id="ShowGeoFenceChk" type="checkbox" name="" value="OFF"/> GeoFence 
+			<br /> 
+			<div id="geofence-button-div">
+			<button id="saveGeoFence"title="save">Save</button>
+			<button id="loadGeoFence" title="load">Load</button>
+			<button id="resetGeoFence" title="load">Reset</button>
+			</div>
+		</li>
+	</ul>
 
 	<!-- GOOGLE MAPS -->
 	<div id="map_canvas"></div>
@@ -138,11 +115,9 @@
 <div id="mid"> 
 	
 	<div id="contentmid">
-	
-	<!--LOCATION TABLE TITLE -->
-	<strong id="table-title"> LOCATION TABLE </strong> 
-
-			<ul style="margin: 2px 0px 0px 5px; height: inherit; list-style: outside none none; float: right; width: 470px;">
+		<!--LOCATION TABLE TITLE -->
+		<strong id="table-title"> LOCATION TABLE </strong> 
+		<ul style="margin: 2px 0px 0px 5px; height: inherit; list-style: outside none none; float: right; width: 470px;">
 			<!--SEARCHBAR AND BUTTON-->
 			<li style="float left; display:inline; "> <!-- INCLUDES SEARCH BAR AND MAX AND MIN BUTTONS -->
 				<label>
@@ -152,23 +127,18 @@
 							<li style="float:left; margin:0px"> <button class="but">Search</button> </li>    <!--SEACH BUTTON -->
 						</ul>
 					</form>
-				
 				</label>
 			</li>
-			
-			
 			<!--MINIMIZE BUTTON-->
 			<li style="float: left; display: inline; padding-left: 25px; margin-left: 10px;">
 				<button id="minimize" title="Minimize table">-</button>
 			</li>
-			
 			<!--MAXIMIZE BUTTON-->
 			<li style="float: left; padding: 0px; display: inline; margin-right: 0px;">
 				<button id="maximize" title="Maximize table">+</button>
 			</li>
-		
 		</ul>
-		</div>
+	</div>
 			
 </div>
 
@@ -176,41 +146,33 @@
 <!--LOCATION TABLE -->
 <div id="contain">
 
-<div class="bottom column2">
-				<div class="scrollit">
-                <table id="myTable">
-                  	<thead style="" > <!--display:block-->
-	                    <tr>
-	                    	<!-- <th style="width:4%"><input id="ch" type="checkbox" name="callerrow" value="allrows"/></th> -->
-		                    <th>DEVICE ID</th><th style="">DATE/TIME</th><th>LATITUDE</th><th>LONGITUDE</th><th>ALTITUDE</th>
-		                    <th>SENSOR(S)</th>
-		                  <!--   <th style="width:30px;"></th> -->
-	                    </tr>
-                    </thead>
-
-                    
-						
-                        <tbody style=""> <!--display:block-->
-                        
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                       	<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                       	<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                      
-                        
-                        </tbody>
-
-                    
-               </table>
-           </div>
-		</div>
+	<div class="bottom column2">
+		<div class="scrollit">
+                	<table id="myTable">
+                  		<thead style="" > <!--display:block-->
+		                    	<tr>
+		                    		<!-- <th style="width:4%"><input id="ch" type="checkbox" name="callerrow" value="allrows"/></th> -->
+			                	<th>DEVICE ID</th><th style="">DATE/TIME</th><th>LATITUDE</th><th>LONGITUDE</th>
+			                	<th>ALTITUDE</th><th>SENSOR(S)</th>
+			                	<!--   <th style="width:30px;"></th> -->
+		                    	</tr>
+                    		</thead>
+				<tbody style=""> <!--display:block-->
+	                        	<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                       	<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                       	<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+		                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	                      	</tbody>
+			</table>
+           	</div>
+	</div>
 </div>
 
 
