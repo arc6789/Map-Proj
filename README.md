@@ -16,6 +16,8 @@ Replace new key with old key found in index.html on line 11.
 
 ![alt tag](https://github.com/arc6789/Map-Proj/blob/master/images/settings.png)
 
+![alt tag](https://github.com/arc6789/Map-Proj/blob/master/images/site.png)
+
 
 
 
